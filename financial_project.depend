@@ -1,0 +1,111 @@
+# depslib dependency file v1.0
+1614544959 source:c:\users\wojci\documents\paczka_55\plus\financial_project\auxiliary_date.cpp
+	"auxiliary_date.h"
+
+1614544960 c:\users\wojci\documents\paczka_55\plus\financial_project\auxiliary_date.h
+	<iostream>
+
+1614547055 source:c:\users\wojci\documents\paczka_55\plus\financial_project\auxiliary_methods.cpp
+	"auxiliary_methods.h"
+
+1614544959 c:\users\wojci\documents\paczka_55\plus\financial_project\auxiliary_methods.h
+	<iostream>
+	<vector>
+	<fstream>
+	<cstdlib>
+	<time.h>
+	<sstream>
+	<algorithm>
+	"auxiliary_date.h"
+
+1614544959 source:c:\users\wojci\documents\paczka_55\plus\financial_project\balance.cpp
+	"balance.h"
+
+1614544959 c:\users\wojci\documents\paczka_55\plus\financial_project\balance.h
+	<iostream>
+	<vector>
+	<fstream>
+	<cstdlib>
+	<algorithm>
+	<iostream>
+	"income_expense.h"
+	"Income_expense_file.h"
+	"auxiliary_date.h"
+
+1614544959 c:\users\wojci\documents\paczka_55\plus\financial_project\income_expense.h
+	<iostream>
+
+1614544959 c:\users\wojci\documents\paczka_55\plus\financial_project\income_expense_file.h
+	<iostream>
+	<vector>
+	<fstream>
+	<cstdlib>
+	"auxiliary_methods.h"
+	"income_expense.h"
+	"Markup.h"
+
+1303067212 c:\users\wojci\documents\paczka_55\plus\financial_project\markup.h
+	<stdlib.h>
+	<string.h>
+	<string>
+	<afx.h>
+
+1614544959 source:c:\users\wojci\documents\paczka_55\plus\financial_project\income_expense.cpp
+	"income_expense.h"
+
+1614545620 source:c:\users\wojci\documents\paczka_55\plus\financial_project\income_expense_file.cpp
+	"Income_expense_file.h"
+
+1614548234 source:c:\users\wojci\documents\paczka_55\plus\financial_project\main.cpp
+	<iostream>
+	"menu.h"
+
+1614544960 c:\users\wojci\documents\paczka_55\plus\financial_project\menu.h
+	<iostream>
+	<iostream>
+	"auxiliary_date.h"
+	"income_expense_file.h"
+	"balance.h"
+	"user_file.h"
+	"user_menager.h"
+
+1614544960 c:\users\wojci\documents\paczka_55\plus\financial_project\user_file.h
+	<iostream>
+	<vector>
+	<fstream>
+	<cstdlib>
+	<string>
+	"auxiliary_methods.h"
+	"Markup.h"
+	"user_menager.h"
+
+1614545346 c:\users\wojci\documents\paczka_55\plus\financial_project\user_menager.h
+	<fstream>
+	<cstdlib>
+	"Markup.h"
+	"user.h"
+	"user_file.h"
+
+1614544959 c:\users\wojci\documents\paczka_55\plus\financial_project\user.h
+	<iostream>
+
+1303067212 source:c:\users\wojci\documents\paczka_55\plus\financial_project\markup.cpp
+	<stdio.h>
+	"Markup.h"
+	<errno.h>
+	<iconv.h>
+	<windows.h>
+	<mbstring.h>
+
+1614544959 source:c:\users\wojci\documents\paczka_55\plus\financial_project\menu.cpp
+	"menu.h"
+
+1614544959 source:c:\users\wojci\documents\paczka_55\plus\financial_project\user.cpp
+	"user.h"
+
+1614545620 source:c:\users\wojci\documents\paczka_55\plus\financial_project\user_file.cpp
+	"user_file.h"
+
+1614544959 source:c:\users\wojci\documents\paczka_55\plus\financial_project\user_menager.cpp
+	"user_menager.h"
+

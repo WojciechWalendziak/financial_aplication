@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="financial_project" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/financial_project" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/financial_project" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Markup.cpp" />
+		<Unit filename="Markup.h" />
+		<Unit filename="auxiliary_date.cpp" />
+		<Unit filename="auxiliary_date.h" />
+		<Unit filename="auxiliary_methods.cpp" />
+		<Unit filename="auxiliary_methods.h" />
+		<Unit filename="balance.cpp" />
+		<Unit filename="balance.h" />
+		<Unit filename="income_expense.cpp" />
+		<Unit filename="income_expense.h" />
+		<Unit filename="income_expense_file.cpp" />
+		<Unit filename="income_expense_file.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="menu.cpp" />
+		<Unit filename="menu.h" />
+		<Unit filename="user.cpp" />
+		<Unit filename="user.h" />
+		<Unit filename="user_file.cpp" />
+		<Unit filename="user_file.h" />
+		<Unit filename="user_menager.cpp" />
+		<Unit filename="user_menager.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
