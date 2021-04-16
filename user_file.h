@@ -15,11 +15,6 @@ using namespace std;
 
 class User_file
 {
-    //int id;
-    //string login;
-    //string password;
-    //string name;
-    //string surname;
 
 public:
 

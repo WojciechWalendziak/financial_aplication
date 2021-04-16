@@ -1,14 +1,14 @@
 # depslib dependency file v1.0
-1614544959 source:c:\users\wojci\documents\paczka_55\plus\financial_project\auxiliary_date.cpp
+1614548559 source:c:\users\wojci\documents\paczka_55\plus\financial_project\auxiliary_date.cpp
 	"auxiliary_date.h"
 
-1614544960 c:\users\wojci\documents\paczka_55\plus\financial_project\auxiliary_date.h
+1615498976 c:\users\wojci\documents\paczka_55\plus\financial_project\auxiliary_date.h
 	<iostream>
 
-1614547055 source:c:\users\wojci\documents\paczka_55\plus\financial_project\auxiliary_methods.cpp
+1618572967 source:c:\users\wojci\documents\paczka_55\plus\financial_project\auxiliary_methods.cpp
 	"auxiliary_methods.h"
 
-1614544959 c:\users\wojci\documents\paczka_55\plus\financial_project\auxiliary_methods.h
+1617924039 c:\users\wojci\documents\paczka_55\plus\financial_project\auxiliary_methods.h
 	<iostream>
 	<vector>
 	<fstream>
@@ -18,10 +18,10 @@
 	<algorithm>
 	"auxiliary_date.h"
 
-1614544959 source:c:\users\wojci\documents\paczka_55\plus\financial_project\balance.cpp
+1618569328 source:c:\users\wojci\documents\paczka_55\plus\financial_project\balance.cpp
 	"balance.h"
 
-1614544959 c:\users\wojci\documents\paczka_55\plus\financial_project\balance.h
+1614715125 c:\users\wojci\documents\paczka_55\plus\financial_project\balance.h
 	<iostream>
 	<vector>
 	<fstream>
@@ -32,10 +32,10 @@
 	"Income_expense_file.h"
 	"auxiliary_date.h"
 
-1614544959 c:\users\wojci\documents\paczka_55\plus\financial_project\income_expense.h
+1615750598 c:\users\wojci\documents\paczka_55\plus\financial_project\income_expense.h
 	<iostream>
 
-1614544959 c:\users\wojci\documents\paczka_55\plus\financial_project\income_expense_file.h
+1614548559 c:\users\wojci\documents\paczka_55\plus\financial_project\income_expense_file.h
 	<iostream>
 	<vector>
 	<fstream>
@@ -44,23 +44,23 @@
 	"income_expense.h"
 	"Markup.h"
 
-1303067212 c:\users\wojci\documents\paczka_55\plus\financial_project\markup.h
+1303070812 c:\users\wojci\documents\paczka_55\plus\financial_project\markup.h
 	<stdlib.h>
 	<string.h>
 	<string>
 	<afx.h>
 
-1614544959 source:c:\users\wojci\documents\paczka_55\plus\financial_project\income_expense.cpp
+1615750598 source:c:\users\wojci\documents\paczka_55\plus\financial_project\income_expense.cpp
 	"income_expense.h"
 
-1614545620 source:c:\users\wojci\documents\paczka_55\plus\financial_project\income_expense_file.cpp
+1618569328 source:c:\users\wojci\documents\paczka_55\plus\financial_project\income_expense_file.cpp
 	"Income_expense_file.h"
 
-1614548234 source:c:\users\wojci\documents\paczka_55\plus\financial_project\main.cpp
+1615499593 source:c:\users\wojci\documents\paczka_55\plus\financial_project\main.cpp
 	<iostream>
 	"menu.h"
 
-1614544960 c:\users\wojci\documents\paczka_55\plus\financial_project\menu.h
+1615499019 c:\users\wojci\documents\paczka_55\plus\financial_project\menu.h
 	<iostream>
 	<iostream>
 	"auxiliary_date.h"
@@ -69,7 +69,7 @@
 	"user_file.h"
 	"user_menager.h"
 
-1614544960 c:\users\wojci\documents\paczka_55\plus\financial_project\user_file.h
+1614714249 c:\users\wojci\documents\paczka_55\plus\financial_project\user_file.h
 	<iostream>
 	<vector>
 	<fstream>
@@ -79,17 +79,17 @@
 	"Markup.h"
 	"user_menager.h"
 
-1614545346 c:\users\wojci\documents\paczka_55\plus\financial_project\user_menager.h
+1614548946 c:\users\wojci\documents\paczka_55\plus\financial_project\user_menager.h
 	<fstream>
 	<cstdlib>
 	"Markup.h"
 	"user.h"
 	"user_file.h"
 
-1614544959 c:\users\wojci\documents\paczka_55\plus\financial_project\user.h
+1614548559 c:\users\wojci\documents\paczka_55\plus\financial_project\user.h
 	<iostream>
 
-1303067212 source:c:\users\wojci\documents\paczka_55\plus\financial_project\markup.cpp
+1303070812 source:c:\users\wojci\documents\paczka_55\plus\financial_project\markup.cpp
 	<stdio.h>
 	"Markup.h"
 	<errno.h>
@@ -97,15 +97,15 @@
 	<windows.h>
 	<mbstring.h>
 
-1614544959 source:c:\users\wojci\documents\paczka_55\plus\financial_project\menu.cpp
+1618572811 source:c:\users\wojci\documents\paczka_55\plus\financial_project\menu.cpp
 	"menu.h"
 
-1614544959 source:c:\users\wojci\documents\paczka_55\plus\financial_project\user.cpp
+1615515052 source:c:\users\wojci\documents\paczka_55\plus\financial_project\user.cpp
 	"user.h"
 
-1614545620 source:c:\users\wojci\documents\paczka_55\plus\financial_project\user_file.cpp
-	"user_file.h"
-
-1614544959 source:c:\users\wojci\documents\paczka_55\plus\financial_project\user_menager.cpp
+1618563134 source:c:\users\wojci\documents\paczka_55\plus\financial_project\user_menager.cpp
 	"user_menager.h"
+
+1618485186 source:c:\users\wojci\documents\paczka_55\plus\financial_project\user_file.cpp
+	"user_file.h"
 

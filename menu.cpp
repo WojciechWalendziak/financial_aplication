@@ -1,7 +1,6 @@
 #include "menu.h"
-//vector <income> incomes;
 
-void choose_action()
+void Menu::choose_action()
 {
     int id = 1, count_index = 1, income_id = 0, choose = 0, user_id = 0, number_of_days = 0;
     bool bSuccess = true;
@@ -13,20 +12,19 @@ void choose_action()
 
     Auxiliary_date date_start;
     Auxiliary_date date_end;
-    //date_start = new Auxiliary_date;
-    //date_end = new Auxiliary_date;
 
     cout << "wybierz jedno z ponizszych: " << endl;
     cout << " " << endl;
     cout << "Rejestarcja - wpisz cyfre 1" << endl;
     cout << "Logowanie - wpisz cyfre 2" << endl;
     cin >> choose;
+    cout << "wybrales " << choose << endl;
     switch (choose)
     {
-        case '1':
+        case 1:
             user_file.registration();
             break;
-        case '2':
+        case 2:
             user_id = user_menager.log_user();
             while(user_id != 0)
             {
@@ -42,30 +40,26 @@ void choose_action()
                 cin >> choose;
                 switch (choose)
                 {
-                    case '1':
+                    case 1:
                         {
-                            //Dodaj przychód
                             income_expense_file.save_new_Income_expense(user_id, 1);
                             break;
                         }
-                    case '2':
+                    case 2:
                         {
-                            //Dodaj wydatek
                             income_expense_file.save_new_Income_expense(user_id, 2);
                             break;
                         }
-                    case '3':
+                    case 3:
                         {
                             date_end = Auxiliary_methods::current_date();
                             date_start.setYear(date_end.getYear());
                             date_start.setMonth(date_end.getMonth());
                             date_start.setDay(1);
                             balance.show_balance(user_id, date_start, date_end);
-                            //delete date_start;
-                            //delete date_end;
                         break;
                         }
-                    case '4':
+                    case 4:
                         {
                             date_end = Auxiliary_methods::current_date();
                             if (date_end.getMonth() != 1)
@@ -92,18 +86,15 @@ void choose_action()
                             }
                             date_start.setDay(1);
                             balance.show_balance(user_id, date_start, date_end);
-                            //delete date_start;
-                            //delete date_end;
                             break;
                         }
-                    case '5':
+                    case 5:
                         {
-                            //Bilans z wybranego okresu
                             int check = 0;
                             string date;
                             while (check == 0)
                             {
-                                cout << "podaj date poczatkowa: " << endl;
+                                cout << "podaj date poczatkowa (w formacie yyyy-mm-dd) : " << endl;
                                 cin >> date;
                                 if(Auxiliary_methods::check_date(date) == true)
                                 {
@@ -118,7 +109,7 @@ void choose_action()
                             check = 0;
                             while (check == 0)
                             {
-                                cout << "podaj date koncowa: " << endl;
+                                cout << "podaj date koncowa (w formacie yyyy-mm-dd) : " << endl;
                                 cin >> date;
                                 if(Auxiliary_methods::check_date(date) == true)
                                 {
@@ -131,19 +122,15 @@ void choose_action()
                             }
                             date_end = Auxiliary_methods::create_date(date);
                             balance.show_balance(user_id, date_start, date_end);
-                            //delete date_start;
-                            //delete date_end;
                             break;
                         }
-                    case '6':
+                    case 6:
                         {
-                            //Zmieñ has³o
                             user_file.change_password(user_id);
                             break;
                         }
-                     case '7':
+                     case 7:
                          {
-                             //Wyloguj siê
                             user_id = 0;
                             break;
                          }

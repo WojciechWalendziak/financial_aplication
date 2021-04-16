@@ -8,10 +8,6 @@
     {
         title = newTitle;
     }
-    void Income_expense::setDate_of_income_expense(string newDate)
-    {
-        date_of_income_expense = newDate;
-    }
     void Income_expense::setDay(int newDay)
     {
         day = newDay;
@@ -35,10 +31,6 @@
     string Income_expense::getTitle()
     {
         return title;
-    }
-    string Income_expense::getDate_of_income_expense()
-    {
-        return date_of_income_expense;
     }
     int Income_expense::getDay()
     {

@@ -14,11 +14,11 @@
     }
     void User::setName(string newName)
     {
-        login = newName;
+        name = newName;
     }
     void User::setSurname(string newSurname)
     {
-        login = newSurname;
+        surname = newSurname;
     }
 
     int User::getId()

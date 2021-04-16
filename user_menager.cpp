@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int check_if_login_exists(string login_to_check)
+int User_menager::check_if_login_exists(string login_to_check)
 {
     int answer = 0;
     vector <User> users;
@@ -24,7 +24,7 @@ int check_if_login_exists(string login_to_check)
     }
     return answer;
 }
-int check_if_password_exists(string password_to_check)
+int User_menager::check_if_password_exists(string password_to_check)
 {
     int answer = 0;
     User_file userFile;
@@ -44,13 +44,13 @@ int check_if_password_exists(string password_to_check)
     }
     return answer;
 }
-int log_user()
+int User_menager::log_user()
 {
     bool check = true;
     int user_id = 0;
     vector <User> users;
     User_file userFile;
-    string login = "", password = "";
+    string login = "", password = "", login2 = "", password2 = "";
 
     users = userFile.getUsers();
     cout << endl << "Podaj login: ";
@@ -72,6 +72,7 @@ int log_user()
                     user_id  = itr -> getId();
                     check = true;
                     attempt_number = 0;
+                    itr = users.end() - 1;
                     cout << endl << "Zalogowales sie." << endl << endl;
                     system("pause");
                 }
@@ -85,7 +86,6 @@ int log_user()
                 cout << "Wprowadzono 3 razy bledne password." << endl;
                 system("pause");
             }
-            //return 0;
         }
         else
         {

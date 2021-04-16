@@ -16,6 +16,12 @@ string Auxiliary_methods::convert_double_to_string(double number)
     string str = ss.str();
     return str;
 }
+string Auxiliary_methods::get_Line()
+{
+    string text_to_send = "";
+    getline(cin, text_to_send);
+    return text_to_send;
+}
 int Auxiliary_methods::convert_string_to_int(string number)
 {
     int number_Int;
@@ -37,25 +43,26 @@ int Auxiliary_methods::exponentiation(int date_char, int exponent_index)
 Auxiliary_date Auxiliary_methods::create_date(string date_chain)
 {
     Auxiliary_date date_of_income_expense;
-    int day = 0;
-    int month = 0;
-    int year = 0;
-    for(int i = 0; i < 2; i++)
+    int element = 0;
+    int i = 0;
+    for(int i = 0; i < 4; i++)
     {
-        day = day + exponentiation(date_chain[i], 1-i);
+        element = element + exponentiation(date_chain[i] - 48, 3-i);
     }
-    date_of_income_expense.setDay(day);
-    for(int i = 3; i < 5; i++)
+    date_of_income_expense.setYear(element);
+    element = 0;
+    for(int i = 5; i < 7; i++)
     {
-        month = month + exponentiation(date_chain[i], 4-i);
+        element = element + exponentiation(date_chain[i] - 48, 6-i);
     }
-    date_of_income_expense.setMonth(month);
-    for(int i = 6; i < 10; i++)
+    date_of_income_expense.setMonth(element);
+    element = 0;
+    for(int i = 8; i < 10; i++)
     {
-        year = year + exponentiation(date_chain[i], 9-i);
+        element = element + exponentiation(date_chain[i] - 48, 9-i);
     }
-    date_of_income_expense.setYear(year);
-
+    date_of_income_expense.setDay(element);
+    element = 0;
     return date_of_income_expense;
 }
 
@@ -69,12 +76,11 @@ Auxiliary_date Auxiliary_methods::current_date()
       time (&rawtime);
       timeinfo = localtime(&rawtime);
 
-      strftime(buffer,sizeof(buffer),"%d-%m-%Y %H:%M:%S",timeinfo);
+      strftime(buffer,sizeof(buffer),"%Y-%m-%d %H:%M:%S",timeinfo);
       std::string str(buffer);
 
-      std::cout << str;
     date_of_income_expense = create_date(str);
-  return date_of_income_expense;
+    return date_of_income_expense;
 }
 
 bool Auxiliary_methods::ifLeapYear(int year)
@@ -117,33 +123,34 @@ bool Auxiliary_methods::check_format(string data_chain)
 {
     bool result;
     result = true;
+    char char_1 = ',', char_2 = '.';
     int i;
     for(i = 0; i < data_chain.length(); i++)
     {
         if(data_chain[i] < 48 || data_chain[i] > 57)
         {
-            if(data_chain[i] != 44 || data_chain[i] != 46)
+            if(data_chain[i] != '.')
             {
-                result = false;
+                if(data_chain[i] != ',')
+                {
+                    result = false;
+                }
             }
         }
     }
     return result;
 }
-string Auxiliary_methods::transform_amount(double data_chain)
+string Auxiliary_methods::transform_amount(string data_chain)
 {
-    string data_chain_temp;
-    string data_chain_new;
-    data_chain_temp = convert_double_to_string(data_chain);
     int i = 0;
-    for(i = 0; i < data_chain_temp.length(); i++)
+    for(i = 0; i < data_chain.length(); i++)
     {
-        if (data_chain_temp[i] == 44)
+        if (data_chain[i] == 44)
         {
-            data_chain_temp[i] = 46;
+            data_chain[i] = 46;
         }
     }
-    return data_chain_new;
+    return data_chain;
 }
 bool Auxiliary_methods::check_date(string date_chain)
 {
@@ -161,14 +168,14 @@ bool Auxiliary_methods::check_date(string date_chain)
         year = whole_date.getYear();
     }
     date_of_income_expense = create_date(date_chain);
-    if(date_of_income_expense.getYear() > 2000 && date_of_income_expense.getYear() < year + 1)
+    if(date_of_income_expense.getYear() > 1999 && date_of_income_expense.getYear() < year + 1)
     {
         if(date_of_income_expense.getMonth() > 0 && date_of_income_expense.getMonth() < 13)
         {
             month_length = check_month_length(date_of_income_expense.getMonth(), date_of_income_expense.getYear());
-            if(date_of_income_expense.getDay() > 0 && date_of_income_expense.getDay() < month_length)
+            if(date_of_income_expense.getDay() > 0 && date_of_income_expense.getDay() < month_length + 1)
             {
-                if(date_chain[2] == 45 && date_chain[5] == 45)
+                if(date_chain[4] == 45 && date_chain[7] == 45)
                 {
                     result = true;
                 }

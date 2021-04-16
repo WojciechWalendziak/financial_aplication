@@ -13,14 +13,12 @@
 
 using namespace std;
 
-string imie, nazwisko;
-int nr_tel;
-
 class Auxiliary_methods
 {
     public:
         static string convert_int_to_string(int number);
         static string convert_double_to_string(double number);
+        static string get_Line();
         static int convert_string_to_int(string number);
         static int exponentiation(int date_char, int exponent_index);
         static Auxiliary_date create_date(string date_chain);
@@ -30,6 +28,6 @@ class Auxiliary_methods
         static bool ifLeapYear(int year);
         static int check_month_length(int month_number, int year);
         static bool check_format(string data_chain);
-        static string transform_amount(double data_chain);
+        static string transform_amount(string data_chain);
 };
 #endif

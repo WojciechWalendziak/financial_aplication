@@ -11,12 +11,8 @@
 
 class Menu
 {
-    //Auxiliary_date * date_start;
-    //Auxiliary_date * date_end;
 
  public:
-     Menu();
-    ~Menu();
      void choose_action();
 };
 #endif

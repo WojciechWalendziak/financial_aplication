@@ -8,7 +8,6 @@ using namespace std;
 class Income_expense
 {
     string title;
-    string date_of_income_expense;
     int id;
     int day;
     int month;
@@ -18,14 +17,12 @@ class Income_expense
 public:
     void setTitle(string newTitle);
     void setId(int newId);
-    void setDate_of_income_expense(string newDate);
     void setDay(int newDay);
     void setMonth(int newMonth);
     void setYear(int newYear);
     void setAmount(double newAmount);
 
     string getTitle();
-    string getDate_of_income_expense();
     int getId();
     int getDay();
     int getMonth();
