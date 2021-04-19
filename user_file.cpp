@@ -43,7 +43,7 @@ void User_file::registration()
         }
     }while(check != 0);
     CMarkup xml;
-    bSuccess = xml.Load("C:\\Users\\wojci\\Documents\\PACZKA_55\\PLUS\\financial_project\\users.xml");
+    bSuccess = xml.Load("users.xml");
     if(bSuccess == true)
     {
             xml.FindElem();
@@ -60,7 +60,7 @@ void User_file::registration()
             xml.AddChildElem( "surname", surname );
             xml.OutOfElem();
             xml.ResetMainPos();
-            xml.Save( "C:\\Users\\wojci\\Documents\\PACZKA_55\\PLUS\\financial_project\\users.xml" );
+            xml.Save( "users.xml" );
             xml.ResetMainPos();
             while ( xml.FindElem() )
                 xml.RemoveElem();
@@ -80,7 +80,7 @@ void User_file::registration()
             xml.AddChildElem( "surname", surname );
             xml.OutOfElem();
             xml.ResetPos();
-            xml.Save( "C:\\Users\\wojci\\Documents\\PACZKA_55\\PLUS\\financial_project\\users.xml" );
+            xml.Save( "users.xml" );
             xml.ResetMainPos();
             while ( xml.FindElem() )
                 xml.RemoveElem();
@@ -93,7 +93,7 @@ vector <User> User_file::getUsers()
     User user;
     vector <User> users;
      CMarkup xml;
-    bSuccess = xml.Load("C:\\Users\\wojci\\Documents\\PACZKA_55\\PLUS\\financial_project\\users.xml");
+    bSuccess = xml.Load("users.xml");
     cout << xml.GetResult() << endl;
     if(bSuccess == true)
     {
@@ -153,7 +153,7 @@ void User_file::change_password(int user_id)
             }
     }while(check != 0);
     CMarkup xml;
-    bSuccess = xml.Load("C:\\Users\\wojci\\Documents\\PACZKA_55\\PLUS\\financial_project\\users.xml");
+    bSuccess = xml.Load("users.xml");
     if(bSuccess == true)
     {
             xml.FindElem(); // main is TESTDOC, no child position

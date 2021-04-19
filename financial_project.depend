@@ -53,7 +53,7 @@
 1615750598 source:c:\users\wojci\documents\paczka_55\plus\financial_project\income_expense.cpp
 	"income_expense.h"
 
-1618569328 source:c:\users\wojci\documents\paczka_55\plus\financial_project\income_expense_file.cpp
+1618791978 source:c:\users\wojci\documents\paczka_55\plus\financial_project\income_expense_file.cpp
 	"Income_expense_file.h"
 
 1615499593 source:c:\users\wojci\documents\paczka_55\plus\financial_project\main.cpp
@@ -79,7 +79,7 @@
 	"Markup.h"
 	"user_menager.h"
 
-1614548946 c:\users\wojci\documents\paczka_55\plus\financial_project\user_menager.h
+1618818554 c:\users\wojci\documents\paczka_55\plus\financial_project\user_menager.h
 	<fstream>
 	<cstdlib>
 	"Markup.h"
@@ -97,15 +97,15 @@
 	<windows.h>
 	<mbstring.h>
 
-1618572811 source:c:\users\wojci\documents\paczka_55\plus\financial_project\menu.cpp
+1618573348 source:c:\users\wojci\documents\paczka_55\plus\financial_project\menu.cpp
 	"menu.h"
 
 1615515052 source:c:\users\wojci\documents\paczka_55\plus\financial_project\user.cpp
 	"user.h"
 
-1618563134 source:c:\users\wojci\documents\paczka_55\plus\financial_project\user_menager.cpp
+1618573348 source:c:\users\wojci\documents\paczka_55\plus\financial_project\user_menager.cpp
 	"user_menager.h"
 
-1618485186 source:c:\users\wojci\documents\paczka_55\plus\financial_project\user_file.cpp
+1618792033 source:c:\users\wojci\documents\paczka_55\plus\financial_project\user_file.cpp
 	"user_file.h"
 

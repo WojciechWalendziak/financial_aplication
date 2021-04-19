@@ -63,11 +63,11 @@ void Income_expense_file::save_new_Income_expense(int user_id, int kind_of_recor
     CMarkup xml;
         if(kind_of_record == 1)
         {
-            bSuccess = xml.Load("C:\\Users\\wojci\\Documents\\PACZKA_55\\PLUS\\financial_project\\incomes.xml");
+            bSuccess = xml.Load("incomes.xml");
         }
         else
         {
-            bSuccess = xml.Load("C:\\Users\\wojci\\Documents\\PACZKA_55\\PLUS\\financial_project\\expenses.xml");
+            bSuccess = xml.Load("expenses.xml");
         }
         //cout << xml.GetResult() << endl;
         //cout << "bSuccess: " << bSuccess << endl;
@@ -157,11 +157,11 @@ void Income_expense_file::save_new_Income_expense(int user_id, int kind_of_recor
                 xml.ResetMainPos();
                 if(kind_of_record == 1)
                 {
-                    xml.Save( "C:\\Users\\wojci\\Documents\\PACZKA_55\\PLUS\\financial_project\\incomes.xml" );
+                    xml.Save( "incomes.xml" );
                 }
                 else
                 {
-                    xml.Save( "C:\\Users\\wojci\\Documents\\PACZKA_55\\PLUS\\financial_project\\expenses.xml" );
+                    xml.Save( "expenses.xml" );
                 }
                 xml.ResetMainPos();
                 xml.RemoveElem();
@@ -210,11 +210,11 @@ void Income_expense_file::save_new_Income_expense(int user_id, int kind_of_recor
                         xml.ResetPos();
                         if(kind_of_record == 1)
                         {
-                            xml.Save( "C:\\Users\\wojci\\Documents\\PACZKA_55\\PLUS\\financial_project\\incomes.xml" );
+                            xml.Save( "incomes.xml" );
                         }
                         else
                         {
-                            xml.Save( "C:\\Users\\wojci\\Documents\\PACZKA_55\\PLUS\\financial_project\\expenses.xml" );
+                            xml.Save( "expenses.xml" );
                         }
                         xml.ResetMainPos();
                         xml.RemoveElem();
@@ -233,11 +233,11 @@ vector <Income_expense> Income_expense_file::getIncomes_Expenses(int user_id, in
     bool bSuccess = false;
     if(kind_of_record == 1)
     {
-        bSuccess = xml.Load("C:\\Users\\wojci\\Documents\\PACZKA_55\\PLUS\\financial_project\\incomes.xml");
+        bSuccess = xml.Load("incomes.xml");
     }
     else
     {
-        bSuccess = xml.Load("C:\\Users\\wojci\\Documents\\PACZKA_55\\PLUS\\financial_project\\expenses.xml");
+        bSuccess = xml.Load("expenses.xml");
     }
     //cout << xml.GetResult() << endl;
     //cout << "bSuccess: " << bSuccess << endl;

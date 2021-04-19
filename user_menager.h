@@ -12,11 +12,6 @@ using namespace std;
 
 class User_menager
 {
-    //int id;
-    //string login;
-    //string password;
-    //string name;
-    //string surname;
 
 public:
 
