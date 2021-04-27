@@ -30,7 +30,7 @@ void Income_expense_file::save_new_Income_expense(int user_id, int kind_of_recor
         check = 0;
         do
         {
-                cout << "podaj date: " << endl;
+                cout << "podaj date (w formacie yyyy-mm-dd) : " << endl;
                 cin >> string_date;
                 if(Auxiliary_methods::check_date(string_date) == true)
                 {

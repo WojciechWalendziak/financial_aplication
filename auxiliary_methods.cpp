@@ -85,32 +85,32 @@ Auxiliary_date Auxiliary_methods::current_date()
 
 bool Auxiliary_methods::ifLeapYear(int year)
 {
-   if (((year%4 == 0)&& (year%100 != 0)) || (year%400 == 0))
+   if (((year%4 == 0) && (year%100 != 0)) || (year%400 == 0))
    {
-     	return false;
+     	return true;
    }
    else
    {
-        return true;
+        return false;
    }
 }
 
 int Auxiliary_methods::check_month_length(int month_number, int year)
 {
     int month_length = 0;
-    if(month_number%2 == 0 && month_number != 2)
+    if(month_number == 4 || month_number == 6 || month_number == 9 || month_number == 11)
     {
         month_length = 30;
     }
     else if(month_number == 2)
     {
-            if(ifLeapYear(year) == 0)
+            if(ifLeapYear(year) == true)
             {
-                month_length = 28;
+                month_length = 29;
             }
             else
             {
-                month_length = 29;
+                month_length = 28;
             }
     }
     else
